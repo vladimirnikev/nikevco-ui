@@ -1,0 +1,17 @@
+<input
+  [ngClass]="{ right: labelPosition === 'before' }"
+  [disabled]="disabled"
+  (change)="onChange()"
+  [id]="id"
+  type="radio"
+  [checked]="checked"
+  [value]="value"
+  [attr.name]="name"
+/>
+<div class="nikevco-ui-custom-radio">
+  <div class="nikevco-ui-custom-radio-inner"></div>
+</div>
+
+<label [for]="id" [ngClass]="{ before: labelPosition === 'before' }">
+  <ng-content></ng-content>
+</label>

@@ -1,0 +1,67 @@
+<div>
+  <p>Colors:</p>
+  <nikevco-ui-radio-group>
+    <nikevco-ui-radio-button value="1" color="primary"
+      >Primary</nikevco-ui-radio-button
+    >
+    <nikevco-ui-radio-button value="2" color="secondary"
+      >Secondary</nikevco-ui-radio-button
+    >
+    <nikevco-ui-radio-button value="3" color="warn"
+      >Warn</nikevco-ui-radio-button
+    >
+    <nikevco-ui-radio-button [disabled]="true" value="4" color="danger"
+      >Disabled</nikevco-ui-radio-button
+    >
+    <nikevco-ui-radio-button value="5" color="danger"
+      >Danger</nikevco-ui-radio-button
+    >
+    <nikevco-ui-radio-button labelPosition="before" value="6" color="success"
+      >Success</nikevco-ui-radio-button
+    >
+  </nikevco-ui-radio-group>
+</div>
+
+<div>
+  <p>Form Control:</p>
+  <nikevco-ui-radio-group [formControl]="selectedColorControl">
+    <nikevco-ui-radio-button
+      color="secondary"
+      *ngFor="let color of colors"
+      [value]="color.value"
+      >{{ color.name }}</nikevco-ui-radio-button
+    >
+  </nikevco-ui-radio-group>
+  <span>Selected color: {{ selectedColorControl.value }}</span>
+</div>
+
+<div>
+  <p>NgModel:</p>
+  <nikevco-ui-radio-group color="success" [(ngModel)]="selectedBrand">
+    <nikevco-ui-radio-button
+      [name]="brand.name"
+      *ngFor="let brand of brands"
+      [value]="brand.value"
+      >{{ brand.name }}</nikevco-ui-radio-button
+    >
+  </nikevco-ui-radio-group>
+  <span>Selected brand: {{ selectedBrand }}</span>
+</div>
+
+<div>
+  <p>Content inside:</p>
+  <nikevco-ui-radio-group [(ngModel)]="selectedContent">
+    <nikevco-ui-radio-button #first value="first"
+      >First</nikevco-ui-radio-button
+    >
+    <span *ngIf="first.checked">View for selected value - first</span>
+    <nikevco-ui-radio-button #second value="second"
+      >Second</nikevco-ui-radio-button
+    >
+    <span *ngIf="second.checked">View for selected value - second</span>
+    <nikevco-ui-radio-button #third value="third"
+      >Third</nikevco-ui-radio-button
+    >
+    <span *ngIf="third.checked">View for selected value - third</span>
+  </nikevco-ui-radio-group>
+</div>

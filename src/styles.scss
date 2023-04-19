@@ -1,1 +1,253 @@
 /* You can add global styles to this file, and also import other style files */
+
+// ----- Variables ------ //
+:root {
+  --nkui-color-white: #ffffff;
+  --nkui-color-black: #000000;
+  --nkui-color-red: #b53b3b;
+  --nkui-color-violet: #ad3dad;
+  --nkui-color-green: green;
+  --nkui-color-blue: blue;
+  --nkui-color-grey: #a1a0a0;
+  --nkui-color-dark-grey: #545454;
+  --nkui-color-light-grey: #cccccc;
+  --nkui-color-primary: blue;
+  --nkui-color-secondary: violet;
+  --nkui-color-warn: rgb(214, 214, 34);
+  --nkui-color-success: green;
+  --nkui-color-danger: red;
+  --nkui-color-error: #b53b3b;
+  --nkui-spacing-1: 4px;
+  --nkui-spacing-2: 8px;
+  --nkui-spacing-3: 16px;
+  --nkui-spacing-4: 32px;
+  --nkui-spacing-5: 40px;
+  --nkui-spacing-6: 48px;
+  --nkui-spacing-7: 56px;
+  --nkui-spacing-8: 64px;
+  --nkui-spacing-9: 72px;
+  --nkui-spacing-10: 80px;
+  --nkui-main-font: 'Montserrat', sans-serif;
+  --nkui-font-size-1: 12px;
+  --nkui-font-size-2: 16px;
+  --nkui-font-size-3: 20px;
+  --nkui-font-size-4: 24px;
+  --nkui-font-size-5: 28px;
+  --nkui-font-size-6: 32px;
+  --nkui-font-size-7: 36px;
+  --nkui-line-height-1: 14px;
+  --nkui-line-height-2: 18px;
+  --nkui-line-height-3: 22px;
+  --nkui-line-height-4: 26px;
+  --nkui-line-height-5: 30px;
+  --nkui-line-height-6: 34px;
+  --nkui-line-height-7: 38px;
+  --nkui-font-weight-1: 300;
+  --nkui-font-weight-2: 400;
+  --nkui-font-weigth-3: 500;
+  --nkui-checkbox-width: 22px;
+  --nkui-checkbox-height: 22px;
+  --nkui-checkbox-inner-width: 12px;
+  --nkui-checkbox-inner-height: 12px;
+  --nkui-radio-width: 18px;
+  --nkui-radio-height: 18px;
+  --nkui-radio-inner-width: 12px;
+  --nkui-radio-inner-height: 12px;
+  --nkui-radio-input-width: 28px;
+  --nkui-radio-input-height: 28px;
+}
+
+* {
+  font-family: var(--nkui-main-font);
+}
+
+// ----- Buttons ----- //
+a.nikevco-btn {
+  display: inline-block;
+}
+
+.nikevco-btn {
+  background: none;
+  border: none;
+  padding: var(--nkui-spacing-2) var(--nkui-spacing-2);
+  text-decoration: none;
+  color: var(--nkui-color-black);
+  font-size: var(--nkui-font-size-2);
+  line-height: var(--nkui-line-height-2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nikevco-common-btn {
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    color: var(--nkui-color-grey);
+  }
+
+  &.nikevco-primary {
+    color: var(--nkui-color-primary);
+  }
+
+  &.nikevco-secondary {
+    color: var(--nkui-color-secondary);
+  }
+
+  &.nikevco-warn {
+    color: var(--nkui-color-warn);
+  }
+
+  &.nikevco-danger {
+    color: var(--nkui-color-danger);
+  }
+
+  &.nikevco-success {
+    color: var(--nkui-color-success);
+  }
+}
+
+.nikevco-flat-btn {
+  background: var(--nkui-color-white);
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    color: var(--nkui-color-dark-grey);
+    background: var(--nkui-color-grey);
+  }
+
+  &.nikevco-primary {
+    background: var(--nkui-color-primary);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-secondary {
+    background: var(--nkui-color-secondary);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-warn {
+    background: var(--nkui-color-warn);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-danger {
+    background: var(--nkui-color-danger);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-success {
+    background: var(--nkui-color-success);
+    color: var(--nkui-color-white);
+  }
+}
+
+.nikevco-icon-btn {
+  border-radius: 100%;
+  svg {
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    background: var(--nkui-color-grey);
+  }
+}
+
+.nikevco-raised-btn {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    color: var(--nkui-color-dark-grey);
+    background: var(--nkui-color-grey);
+    box-shadow: none;
+  }
+
+  &.nikevco-primary {
+    background: var(--nkui-color-primary);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-secondary {
+    background: var(--nkui-color-secondary);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-warn {
+    background: var(--nkui-color-warn);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-danger {
+    background: var(--nkui-color-danger);
+    color: var(--nkui-color-white);
+  }
+
+  &.nikevco-success {
+    background: var(--nkui-color-success);
+    color: var(--nkui-color-white);
+  }
+}
+
+.nikevco-stroked-btn {
+  border: 0.5px solid var(--nkui-color-grey);
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    color: var(--nkui-color-grey);
+  }
+
+  &.nikevco-primary {
+    color: var(--nkui-color-primary);
+  }
+
+  &.nikevco-secondary {
+    color: var(--nkui-color-secondary);
+  }
+
+  &.nikevco-warn {
+    color: var(--nkui-color-warn);
+  }
+
+  &.nikevco-danger {
+    color: var(--nkui-color-danger);
+  }
+
+  &.nikevco-success {
+    color: var(--nkui-color-success);
+  }
+}
+
+// ------ Input Radio ------ //
+nikevco-ui-radio-group.nikevco-primary input:checked + div.nikevco-ui-custom-radio {
+  border: 1px var(--nkui-color-primary) solid !important;
+}
+nikevco-ui-radio-group.nikevco-primary input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
+  background: var(--nkui-color-primary) !important;
+}
+nikevco-ui-radio-group.nikevco-secondary input:checked + div.nikevco-ui-custom-radio {
+  border: 1px var(--nkui-color-secondary) solid !important;
+}
+nikevco-ui-radio-group.nikevco-secondary input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
+  background: var(--nkui-color-secondary) !important;
+}
+nikevco-ui-radio-group.nikevco-warn input:checked + div.nikevco-ui-custom-radio {
+  border: 1px var(--nkui-color-warn) solid !important;
+}
+nikevco-ui-radio-group.nikevco-warn input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
+  background: var(--nkui-color-warn) !important;
+}
+nikevco-ui-radio-group.nikevco-danger input:checked + div.nikevco-ui-custom-radio {
+  border: 1px var(--nkui-color-danger) solid !important;
+}
+nikevco-ui-radio-group.nikevco-danger input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
+  background: var(--nkui-color-danger) !important;
+}
+nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio {
+  border: 1px var(--nkui-color-success) solid !important;
+}
+nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
+  background: var(--nkui-color-success) !important;
+}

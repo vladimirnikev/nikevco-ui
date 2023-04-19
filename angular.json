@@ -100,8 +100,62 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "nikevco-ui": {
+      "projectType": "library",
+      "root": "projects/nikevco-ui",
+      "sourceRoot": "projects/nikevco-ui/src",
+      "prefix": "nikevco-ui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/nikevco-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nikevco-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nikevco-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nikevco-ui/src/test.ts",
+            "tsConfig": "projects/nikevco-ui/tsconfixg.spec.json",
+            "karmaConfig": "projects/nikevco-ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/nikevco-ui/src/**/*.ts",
+              "projects/nikevco-ui/src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

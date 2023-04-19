@@ -1,0 +1,18 @@
+<input
+  #checkbox
+  [indeterminate]="indeterminate"
+  [disabled]="disabled"
+  [id]="id"
+  [checked]="checked"
+  (change)="onModelChange(checkbox.checked)"
+  [attr.name]="name"
+  [attr.required]="required"
+  [attr.value]="value"
+  type="checkbox"
+  [ngClass]="{ right: labelPosition === 'before' }"
+/>
+
+<div class="nikevco-ui-custom-checkbox"></div>
+<label [for]="id" [ngClass]="{ before: labelPosition === 'before' }">
+  <ng-content></ng-content>
+</label>

@@ -1,0 +1,65 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:import/recommended",
+        "airbnb-typescript/base",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "no-useless-escape": "warn",
+        "import/prefer-default-export": "off",
+        "class-methods-use-this": "off",
+        "no-return-assign": "off",
+        "no-plusplus": "off",
+        "prefer-destructuring": "warn",
+        "@angular-eslint/no-output-native": "warn",
+        "lines-between-class-members": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "nikevco",
+            "style": "kebab-case"
+          }
+        ],
+        "import/no-extraneous-dependencies": "off"
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {
+        "max-len": ["error", { "code": 140 }]
+      }
+    }
+  ]
+}

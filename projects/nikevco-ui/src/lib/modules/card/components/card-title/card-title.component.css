@@ -1,0 +1,5 @@
+:host {
+  font-size: var(--nkui-font-size-3);
+  line-height: var(--nkui-line-height-5);
+  font-weight: var(--nkui-font-weigth-3);
+}
