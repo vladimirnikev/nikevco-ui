@@ -27,3 +27,7 @@ export * from './lib/modules/checkbox/checkbox.component';
 export * from './lib/modules/radio/radio.module';
 export * from './lib/modules/radio/components/radio-group/radio-group.component';
 export * from './lib/modules/radio/components/radio-button/radio-button.component';
+export * from './lib/modules/dropdown/dropdown.module';
+export * from './lib/modules/dropdown/components/dropdown/dropdown.component';
+export * from './lib/modules/dropdown/directives/dropdown-trigger-for.directive';
+export * from './lib/modules/dropdown/directives/dropdown-item.directive';

@@ -251,3 +251,21 @@ nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio 
 nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio div.nikevco-ui-custom-radio-inner {
   background: var(--nkui-color-success) !important;
 }
+
+.nikevco-ui-dropdown-item {
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: var(--nkui-spacing-2);
+}
+
+.nikevco-ui-dropdown-item-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: var(--nkui-color-grey);
+}
+
+.nikevco-ui-dropdown-trigger-disable {
+  position: relative;
+}

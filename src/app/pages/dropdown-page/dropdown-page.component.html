@@ -1,0 +1,89 @@
+<div class="container">
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExample">Right</button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleLeft">Left</button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleTop">Top</button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleBottom">Bottom</button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleTopLeft">
+    Top and Left
+  </button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleTopRight">
+    Top and Right
+  </button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleBottomLeft">
+    Bottom and Left
+  </button>
+  <button nikevco-raised-button [nikevcoUiDropdownTriggerFor]="menuExampleBottomRight">
+    Bottom and Right
+  </button>
+
+  <div>Some text</div>
+
+  <nikevco-ui-dropdown #menuExample xPosition="right">
+    <button (click)="onClick()" nikevco-ui-dropdown-item>Link #1</button>
+    <button [disabled]="true" nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleLeft xPosition="left">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleTop yPosition="top">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleBottom yPosition="bottom">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleTopLeft yPosition="top" xPosition="left">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleTopRight yPosition="top" xPosition="right">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleBottomLeft yPosition="bottom" xPosition="left">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+  <nikevco-ui-dropdown #menuExampleBottomRight yPosition="bottom" xPosition="right">
+    <button nikevco-ui-dropdown-item>Link #1</button>
+    <button nikevco-ui-dropdown-item>Link #23</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+    <button nikevco-ui-dropdown-item>Link #333</button>
+  </nikevco-ui-dropdown>
+
+  <button [nikevcoUiDropdownTriggerFor]="menuExample2">Menu #2</button>
+  <div>Some text 2</div>
+  <div>Some text</div>
+  <nikevco-ui-dropdown #menuExample2>
+    <button [nikevcoUiDropdownTriggerFor]="subMenu" nikevco-ui-dropdown-item>Sub Menu #1</button>
+    <button nikevco-ui-dropdown-item>Link #2</button>
+    <button nikevco-ui-dropdown-item>Link #3</button>
+  </nikevco-ui-dropdown>
+
+  <nikevco-ui-dropdown xPosition="right" #subMenu>
+    <button [nikevcoUiDropdownTriggerFor]="subMenu2" nikevco-ui-dropdown-item>Sub Menu #2</button>
+    <button nikevco-ui-dropdown-item>Sub Menu Link #2</button>
+    <button nikevco-ui-dropdown-item>Sub Menu Link #3</button>
+  </nikevco-ui-dropdown>
+
+  <nikevco-ui-dropdown xPosition="left" #subMenu2>
+    <button nikevco-ui-dropdown-item>Sub Menu Link #1</button>
+    <button nikevco-ui-dropdown-item>Sub Menu Link #2</button>
+  </nikevco-ui-dropdown>
+</div>

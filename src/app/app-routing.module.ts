@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
+import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'radios',
     component: RadiosPageComponent,
+  },
+  {
+    path: 'dropdowns',
+    component: DropdownPageComponent,
   },
 ];
 

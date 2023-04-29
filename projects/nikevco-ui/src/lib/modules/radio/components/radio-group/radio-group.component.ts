@@ -3,7 +3,6 @@ import {
   AfterContentInit,
   Component,
   ContentChildren,
-  ElementRef,
   Input,
   OnDestroy,
   QueryList,
@@ -32,8 +31,6 @@ export class RadioGroupComponent implements AfterContentInit, OnDestroy, Control
   @Input() disabled!: boolean;
 
   @Input() labelPosition!: 'before' | 'after';
-
-  constructor(private el: ElementRef) {}
 
   ngAfterContentInit() {
     for (const radioButton of this._radioButtons) {

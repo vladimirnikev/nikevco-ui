@@ -1,0 +1,66 @@
+:host {
+  display: block;
+  width: max-content;
+  position: absolute;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* :host(.top) {
+  transform: translate(0, -100%);
+}
+
+:host(.left) {
+  transform: translate(-100%, 0);
+}
+
+:host(.top.right) {
+  transform: translate(0, -100%);
+}
+
+:host(.top.left) {
+  transform: translate(-100%, -100%);
+}
+
+:host(.bottom.left) {
+  transform: translate(-100%, 0);
+} */
+:host(.top) {
+  transform: translate(0, -100%);
+}
+
+:host(.right) {
+  transform: translate(-100%, 0);
+}
+
+/* :host(.right) {
+  transform: translate(-100%, 0);
+} */
+
+:host(.top.left) {
+  transform: translate(0, -100%);
+}
+
+:host(.top.right) {
+  transform: translate(-100%, -100%);
+}
+
+:host(.bottom.right) {
+  transform: translate(-100%, 0);
+}
+
+:host(.inner-dropdown-left) {
+  transform: translate(-100%, 0);
+}
+
+
+.nikevco-ui-dropdown {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  /* padding: 4px 4px; */
+  background: white;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 30%);
+}

@@ -8,6 +8,7 @@ import {
   NikevCoUIModule,
   NikevCoCardModule,
   NikevCoRadioModule,
+  NikevCoDropdownModule,
 } from 'nikevco-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,6 +17,7 @@ import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.componen
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { CheckboxesPageComponent } from './pages/checkboxes-page/checkboxes-page.component';
 import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
+import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
     CardsPageComponent,
     CheckboxesPageComponent,
     RadiosPageComponent,
+    DropdownPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,8 +39,9 @@ import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
     NikevCoCardModule,
     NikevCoCheckboxModule,
     NikevCoRadioModule,
+    NikevCoDropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
