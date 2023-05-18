@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+:host.hovered .slider-pointer-circle {
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 10px 4px var(--nkui-color-light-grey);
+}
+
+.slider-pointer-circle {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  border-radius:100%;
+  background: var(--nkui-color-primary);
+  transition: box-shadow 0.2s;
+}

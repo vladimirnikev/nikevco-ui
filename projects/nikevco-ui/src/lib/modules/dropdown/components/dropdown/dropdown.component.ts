@@ -32,7 +32,7 @@ export class DropdownComponent implements OnInit, OnDestroy {
 
   @Input() yPosition!: 'top' | 'bottom';
 
-  @ViewChild('dropdown') dropdownRef!: ElementRef;
+  // @ViewChild('dropdown') dropdownRef!: ElementRef;
 
   @HostBinding('style.left.px')
   leftPosition!: number;

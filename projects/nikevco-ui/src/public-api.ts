@@ -31,3 +31,8 @@ export * from './lib/modules/dropdown/dropdown.module';
 export * from './lib/modules/dropdown/components/dropdown/dropdown.component';
 export * from './lib/modules/dropdown/directives/dropdown-trigger-for.directive';
 export * from './lib/modules/dropdown/directives/dropdown-item.directive';
+export * from './lib/modules/slider/slider.module';
+export * from './lib/modules/slider/components/slider/slider.component';
+export * from './lib/modules/slider/directives/slider-pointer.directive';
+export * from './lib/modules/slider/directives/slider-start-pointer.directive';
+export * from './lib/modules/slider/directives/slider-end-pointer.directive';

@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  position: relative;
+  height: 40px;
+}
+
+.line {
+  height: 4px;
+  width: 100%;
+  background: var(--nkui-color-grey);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  pointer-events: none;
+}
+
+.line.filled {
+  background: var(--nkui-color-blue);
+  width: 0;
+}
+
+/* .line.filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
