@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-slider-page',
   templateUrl: './slider-page.component.html',
   styleUrls: ['./slider-page.component.scss'],
 })
-export class SliderPageComponent implements OnInit {
+export class SliderPageComponent {
   min = 100;
 
   max = 1000;
@@ -14,16 +15,19 @@ export class SliderPageComponent implements OnInit {
 
   value = 10;
 
-  constructor() {}
+  sliderValue = [0, 10];
 
-  ngOnInit(): void {
-    // setInterval(() => {
-    // this.value = this.value + 10;
-    // console.log(this.value)
-    // }, 1000)
+  modelValue = [1000, 3000];
+
+  formControl = this.fb.control([1000, 4000]);
+
+  constructor(private fb: FormBuilder) {}
+
+  onChangeSingleValue(value: number[]) {
+    console.log(value);
   }
 
-  onChange() {
-    console.log(this.value);
+  onChangeRangeValue(value: number[]) {
+    console.log(value);
   }
 }

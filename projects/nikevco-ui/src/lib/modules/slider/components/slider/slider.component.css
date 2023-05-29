@@ -1,7 +1,13 @@
 :host {
   display: block;
+  padding: 16px 0px;
+  margin: 0 8px;
+}
+
+.slider-container {
+  display: block;
   position: relative;
-  height: 40px;
+  height: 16px;
 }
 
 .line {
@@ -19,9 +25,3 @@
   background: var(--nkui-color-blue);
   width: 0;
 }
-
-/* .line.filled {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */

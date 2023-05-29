@@ -8,7 +8,6 @@ import {
   OnDestroy,
   OnInit,
   Renderer2,
-  ViewChild,
 } from '@angular/core';
 import { BehaviorSubject, Subscription, filter } from 'rxjs';
 import { DROPDOWN_ITEM_SELECTOR } from '../../directives/dropdown-item.directive';
@@ -31,8 +30,6 @@ export class DropdownComponent implements OnInit, OnDestroy {
   @Input() xPosition!: 'left' | 'right';
 
   @Input() yPosition!: 'top' | 'bottom';
-
-  // @ViewChild('dropdown') dropdownRef!: ElementRef;
 
   @HostBinding('style.left.px')
   leftPosition!: number;

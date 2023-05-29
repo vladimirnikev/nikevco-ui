@@ -1,16 +1,22 @@
 <div class="container">
-  <nikevco-ui-slider>
-    <input nikevcoUiSliderPointer />
-  </nikevco-ui-slider>
-  <nikevco-ui-slider [value]="170" [min]="150" [step]="0.5" [max]="200">
-    <input nikevcoUiSliderPointer />
-  </nikevco-ui-slider>
-  <nikevco-ui-slider [min]="min" [step]="step" [max]="max">
-    <input nikevcoUiSliderPointer [(ngModel)]="value" (ngModelChange)="onChange()" />
+  <nikevco-ui-slider (valueChange)="onChangeSingleValue($event)" [min]="10"> </nikevco-ui-slider>
+  <nikevco-ui-slider [value]="170" [min]="150" [step]="5" [max]="200"> </nikevco-ui-slider>
+  <nikevco-ui-slider [min]="min" [step]="step" [max]="max"> </nikevco-ui-slider>
+
+  <nikevco-ui-slider [min]="100" [step]="1" [max]="500"> </nikevco-ui-slider>
+
+  <nikevco-ui-slider
+    (valueChange)="onChangeRangeValue($event)"
+    [highValue]="90"
+    [min]="1"
+    [step]="1"
+    [max]="100"
+  >
   </nikevco-ui-slider>
 
-  <nikevco-ui-slider [min]="100" [step]="1" [max]="500">
-    <input nikevcoUiSliderStartPointer [value]="250" />
-    <input nikevcoUiSliderEndPointer [value]="400" />
+  <nikevco-ui-slider [(ngModel)]="modelValue" [min]="1000" [step]="100" [max]="10000">
+  </nikevco-ui-slider>
+
+  <nikevco-ui-slider [formControl]="formControl" [min]="1000" [step]="100" [max]="10000">
   </nikevco-ui-slider>
 </div>
