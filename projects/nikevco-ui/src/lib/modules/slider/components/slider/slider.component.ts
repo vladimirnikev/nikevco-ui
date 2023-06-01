@@ -66,11 +66,13 @@ export class SliderComponent implements OnInit, OnChanges, AfterViewInit, Contro
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   writeValue(values: number[]): void {
+    /* eslint-disable prefer-destructuring */
     if (values) {
       this.value = values[0];
       this.highValue = values[1];
       this.updateThumbPositionOnInit();
     }
+    /* eslint-enable no-alert */
   }
 
   registerOnChange(fn: any): void {
@@ -81,7 +83,7 @@ export class SliderComponent implements OnInit, OnChanges, AfterViewInit, Contro
     this.onTouch = fn;
   }
 
-  setDisabledState(isDisabled: boolean): void {}
+  // setDisabledState(isDisabled: boolean): void { }
 
   onChange: any = () => {};
 

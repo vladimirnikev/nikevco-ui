@@ -33,3 +33,5 @@ export * from './lib/modules/dropdown/directives/dropdown-trigger-for.directive'
 export * from './lib/modules/dropdown/directives/dropdown-item.directive';
 export * from './lib/modules/slider/slider.module';
 export * from './lib/modules/slider/components/slider/slider.component';
+export * from './lib/modules/badge/badge.module';
+export * from './lib/modules/badge/directives/badge.directive';

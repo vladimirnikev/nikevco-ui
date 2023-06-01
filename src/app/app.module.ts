@@ -10,6 +10,7 @@ import {
   NikevCoRadioModule,
   NikevCoDropdownModule,
   NikevCoSliderModule,
+  NikevCoBadgeModule,
 } from 'nikevco-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -20,6 +21,7 @@ import { CheckboxesPageComponent } from './pages/checkboxes-page/checkboxes-page
 import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
 import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.component';
 import { SliderPageComponent } from './pages/slider-page/slider-page.component';
+import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { SliderPageComponent } from './pages/slider-page/slider-page.component';
     RadiosPageComponent,
     DropdownPageComponent,
     SliderPageComponent,
+    BadgePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { SliderPageComponent } from './pages/slider-page/slider-page.component';
     NikevCoRadioModule,
     NikevCoDropdownModule,
     NikevCoSliderModule,
+    NikevCoBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

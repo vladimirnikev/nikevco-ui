@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="example">
+    <button
+      [nikevcoBadge]="badgeValue"
+      [nikevcoBadgeColor]="badgeColor"
+      [nikevcoBadgeOverlap]="badgeOverlapping"
+      [nikevcoBadgeSize]="badgeSize"
+      [nikevcoBadgePosition]="badgePosition"
+      [nikevcoBadgeHidden]="badgeHidden"
+      nikevco-raised-button
+    >
+      Button with badge
+    </button>
+  </div>
+
+  <button (click)="changeValue()">Change value</button>
+  <button (click)="changeColor()">Change color</button>
+  <button (click)="changeOverlapping()">Change overlapping</button>
+  <button (click)="changeSize()">Change size</button>
+  <button (click)="changePosition()">Change position</button>
+  <button (click)="changeHidden()">Change hidden</button>
+</div>

@@ -299,3 +299,145 @@ nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio 
   transition: box-shadow 0.2s;
   box-shadow: 0 0 10px 4px var(--nkui-color-light-grey);
 }
+
+// Badge
+.nikevco-ui-badge {
+  position: relative;
+}
+
+.nikevco-ui-badge-content {
+  position: absolute;
+  pointer-events: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-badge-hidden .nikevco-ui-badge-content {
+  opacity: 0;
+}
+
+.nikevco-ui-badge-primary .nikevco-ui-badge-content {
+  background: var(--nkui-color-primary);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-badge-secondary .nikevco-ui-badge-content {
+  background: var(--nkui-color-secondary);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-badge-warn .nikevco-ui-badge-content {
+  background: var(--nkui-color-warn);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-badge-danger .nikevco-ui-badge-content {
+  background: var(--nkui-color-danger);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-badge-success .nikevco-ui-badge-content {
+  background: var(--nkui-color-success);
+  color: var(--nkui-color-white);
+}
+
+
+.nikevco-ui-badge-small .nikevco-ui-badge-content {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.nikevco-ui-badge-medium .nikevco-ui-badge-content {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+
+.nikevco-ui-badge-large .nikevco-ui-badge-content {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-after.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  right: -8px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-after .nikevco-ui-badge-content {
+  right: -16px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-before.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  left: -8px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-before .nikevco-ui-badge-content {
+  left: -16px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-above .nikevco-ui-badge-content {
+  top: -8px;
+}
+
+.nikevco-ui-badge-small.nikevco-ui-badge-below .nikevco-ui-badge-content {
+  bottom: -8px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-after.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  right: -11px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-after .nikevco-ui-badge-content {
+  right: -22px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-before.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  left: -11px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-before .nikevco-ui-badge-content {
+  left: -22px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-above .nikevco-ui-badge-content {
+  top: -11px;
+}
+
+.nikevco-ui-badge-medium.nikevco-ui-badge-below .nikevco-ui-badge-content {
+  bottom: -11px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-after.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  right: -14px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-after .nikevco-ui-badge-content {
+  right: -28px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-before.nikevco-ui-badge-overlap .nikevco-ui-badge-content {
+  left: -14px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-before .nikevco-ui-badge-content {
+  left: -28px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-above .nikevco-ui-badge-content {
+  top: -14px;
+}
+
+.nikevco-ui-badge-large.nikevco-ui-badge-below .nikevco-ui-badge-content {
+  bottom: -14px;
+}
+
+

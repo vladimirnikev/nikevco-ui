@@ -6,6 +6,7 @@ import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 import { RadiosPageComponent } from './pages/radios-page/radios-page.component';
 import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.component';
 import { SliderPageComponent } from './pages/slider-page/slider-page.component';
+import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'sliders',
     component: SliderPageComponent,
+  },
+  {
+    path: 'badges',
+    component: BadgePageComponent,
   },
 ];
 
