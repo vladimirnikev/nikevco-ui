@@ -1,0 +1,39 @@
+:host.nikevco-ui-toggle {
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+:host:hover {
+  background: var(--nkui-color-light-grey);
+}
+
+:host.checked {
+  background: var(--nkui-color-light-grey);
+}
+
+:host.disabled {
+  pointer-events: none;
+  background: var(--nkui-color-dark-grey);
+}
+
+.nikevco-ui-toggle-button {
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nikevco-ui-toggle-button-content {
+  line-height: 48px;
+  display: inline-block;
+  padding: 0 12px;
+}
+
+

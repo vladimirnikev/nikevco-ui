@@ -1,0 +1,7 @@
+:host {
+  display: inline-flex;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: solid 1px var(--nkui-color-grey);
+}

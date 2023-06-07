@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="example">
+    <nikevco-ui-toggle-button-group value="Lebron" (valueChange)="onChange($event)">
+      <nikevco-ui-toggle-button value="Lebron">Lebron James</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Wade">Dwayne Wade</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Jordan">Michael Jordan</nikevco-ui-toggle-button>
+    </nikevco-ui-toggle-button-group>
+  </div>
+
+  <div class="example">
+    <nikevco-ui-toggle-button-group
+      [selected]="['Clevelend', 'Miami']"
+      (valueChange)="onChange($event)"
+      [multiple]="true"
+    >
+      <nikevco-ui-toggle-button value="Clevelend">Clevelend</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Miami">Miami Heats</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Chicago">Chicago Bulls</nikevco-ui-toggle-button>
+    </nikevco-ui-toggle-button-group>
+  </div>
+
+  <div class="example">
+    <nikevco-ui-toggle-button-group
+      [selected]="['Clevelend']"
+      (valueChange)="onChange($event)"
+      [multiple]="true"
+    >
+      <nikevco-ui-toggle-button value="Clevelend">Clevelend</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button [disabled]="isDisabled" value="Miami"
+        >Miami Heats</nikevco-ui-toggle-button
+      >
+      <nikevco-ui-toggle-button value="Chicago">Chicago Bulls</nikevco-ui-toggle-button>
+    </nikevco-ui-toggle-button-group>
+  </div>
+
+  <div class="example">
+    <nikevco-ui-toggle-button-group
+      [ngModel]="teamPurposes"
+      (ngModelChange)="onModelChange($event)"
+      [multiple]="true"
+    >
+      <nikevco-ui-toggle-button value="Clevelend">Clevelend</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Miami">Miami Heats</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Chicago">Chicago Bulls</nikevco-ui-toggle-button>
+    </nikevco-ui-toggle-button-group>
+  </div>
+
+  <div class="example">
+    <nikevco-ui-toggle-button-group [formControl]="club">
+      <nikevco-ui-toggle-button value="Arsenal">Arsenal</nikevco-ui-toggle-button>
+      <nikevco-ui-toggle-button value="Manchester_united"
+        >Manchester United</nikevco-ui-toggle-button
+      >
+      <nikevco-ui-toggle-button value="Manchester_city">Manchester City</nikevco-ui-toggle-button>
+    </nikevco-ui-toggle-button-group>
+  </div>
+</div>

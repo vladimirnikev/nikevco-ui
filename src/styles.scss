@@ -440,4 +440,7 @@ nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio 
   bottom: -14px;
 }
 
-
+// Toggle Button
+.nikevco-ui-toggle+.nikevco-ui-toggle {
+  border-left: 1px solid var(--nkui-color-grey);
+}

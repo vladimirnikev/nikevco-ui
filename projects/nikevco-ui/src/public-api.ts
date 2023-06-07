@@ -35,3 +35,6 @@ export * from './lib/modules/slider/slider.module';
 export * from './lib/modules/slider/components/slider/slider.component';
 export * from './lib/modules/badge/badge.module';
 export * from './lib/modules/badge/directives/badge.directive';
+export * from './lib/modules/toggle-button/toggle-button.module';
+export * from './lib/modules/toggle-button/components/toggle-button/toggle-button.component';
+export * from './lib/modules/toggle-button/components/toggle-button-group/toggle-button-group.component';
