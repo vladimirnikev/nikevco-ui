@@ -444,3 +444,26 @@ nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio 
 .nikevco-ui-toggle+.nikevco-ui-toggle {
   border-left: 1px solid var(--nkui-color-grey);
 }
+
+// Input
+.nikevco-ui-input {
+  background: var(--nkui-color-light-grey);
+  border: none;
+  outline: none;
+  width: 100%;
+  min-height: 24px;
+  padding: 0;
+}
+
+.nikevco-ui-hint-start {
+  text-align: start;
+}
+
+.nikevco-ui-hint-end {
+  text-align: end;
+}
+
+// Select
+.nikevco-ui-select-menu nikevco-ui-option {
+  padding: 4px 8px;
+}

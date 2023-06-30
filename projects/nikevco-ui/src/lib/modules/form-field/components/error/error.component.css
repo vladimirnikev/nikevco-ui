@@ -1,0 +1,6 @@
+:host {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--nkui-color-red);
+  padding: 0 4px;
+}

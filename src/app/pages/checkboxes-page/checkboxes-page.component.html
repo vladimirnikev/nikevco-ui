@@ -1,16 +1,12 @@
 <div class="container">
   <div class="checkboxes-list">
     <nikevco-ui-checkbox [(ngModel)]="isChecked">Checkbox</nikevco-ui-checkbox>
-    <button nikevco-raised-button (click)="toggleCheckbox()">
-      Toggle checkbox
-    </button>
+    <button nikevco-raised-button (click)="toggleCheckbox()">Toggle checkbox</button>
     <nikevco-ui-checkbox color="primary">Primary</nikevco-ui-checkbox>
     <nikevco-ui-checkbox color="secondary">Secondary</nikevco-ui-checkbox>
     <nikevco-ui-checkbox color="warn">Warn</nikevco-ui-checkbox>
     <nikevco-ui-checkbox color="danger">Danger</nikevco-ui-checkbox>
-    <nikevco-ui-checkbox labelPosition="before" color="success"
-      >Success</nikevco-ui-checkbox
-    >
+    <nikevco-ui-checkbox labelPosition="before" color="success">Success</nikevco-ui-checkbox>
     <nikevco-ui-checkbox [disabled]="true">Disabled</nikevco-ui-checkbox>
   </div>
   <div class="checkboxes-list">
@@ -40,20 +36,14 @@
     >
 
     <ng-container formGroupName="bonuses">
-      <nikevco-ui-checkbox formControlName="spa" color="secondary"
-        >SPA</nikevco-ui-checkbox
-      >
-      <nikevco-ui-checkbox formControlName="massage" color="secondary"
-        >Massage</nikevco-ui-checkbox
-      >
+      <nikevco-ui-checkbox formControlName="spa" color="secondary">SPA</nikevco-ui-checkbox>
+      <nikevco-ui-checkbox formControlName="massage" color="secondary">Massage</nikevco-ui-checkbox>
     </ng-container>
   </div>
 
   <div class="checkboxes-list">
     Example with error validation
-    <nikevco-ui-checkbox [formControl]="requiredCheckbox"
-      >Required Checkbox</nikevco-ui-checkbox
-    >
+    <nikevco-ui-checkbox [formControl]="requiredCheckbox">Required Checkbox</nikevco-ui-checkbox>
     <button nikevco-stroked-button (click)="submitFormExample()">Submit</button>
   </div>
 </div>

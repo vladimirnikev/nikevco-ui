@@ -12,6 +12,9 @@ import {
   NikevCoSliderModule,
   NikevCoBadgeModule,
   NikevCoToggleButtonModule,
+  NikevCoFormFieldModule,
+  NikevCoSelectModule,
+  NikevCoInputModule,
 } from 'nikevco-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,6 +27,7 @@ import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.compo
 import { SliderPageComponent } from './pages/slider-page/slider-page.component';
 import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-buttons-page.component';
+import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-page.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,7 @@ import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-b
     SliderPageComponent,
     BadgePageComponent,
     ToggleButtonsPageComponent,
+    FormFieldsPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +57,9 @@ import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-b
     NikevCoSliderModule,
     NikevCoBadgeModule,
     NikevCoToggleButtonModule,
+    NikevCoFormFieldModule,
+    NikevCoSelectModule,
+    NikevCoInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

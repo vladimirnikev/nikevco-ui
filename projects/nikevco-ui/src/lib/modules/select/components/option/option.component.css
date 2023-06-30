@@ -1,0 +1,7 @@
+:host {
+  cursor: pointer;
+}
+
+:host:hover {
+  background: var(--nkui-color-grey);
+}

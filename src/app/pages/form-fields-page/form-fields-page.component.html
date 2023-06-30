@@ -1,0 +1,50 @@
+<div class="container">
+  <nikevco-ui-form-field>
+    <nikevco-ui-label>Label</nikevco-ui-label>
+    <input nikevcoUiInput type="text" />
+    <nikevco-ui-error *ngIf="isError">Error</nikevco-ui-error>
+    <nikevco-ui-hint>Hint</nikevco-ui-hint>
+  </nikevco-ui-form-field>
+
+  <nikevco-ui-form-field>
+    <nikevco-ui-label>Label</nikevco-ui-label>
+    <textarea nikevcoUiInput></textarea>
+    <nikevco-ui-error *ngIf="isError">Error</nikevco-ui-error>
+    <nikevco-ui-hint>Hint</nikevco-ui-hint>
+  </nikevco-ui-form-field>
+
+  <nikevco-ui-form-field>
+    <nikevco-ui-label>Pet</nikevco-ui-label>
+    <nikevco-ui-select value="Dog" (valueChange)="onSelect($event)">
+      <nikevco-ui-option value="Dog">Dog</nikevco-ui-option>
+      <nikevco-ui-option value="Cat">Cat</nikevco-ui-option>
+      <nikevco-ui-option value="Humster">Humster</nikevco-ui-option>
+    </nikevco-ui-select>
+
+    <nikevco-ui-error>Error</nikevco-ui-error>
+    <nikevco-ui-hint>Hint</nikevco-ui-hint>
+
+    <nikevco-ui-error>Error</nikevco-ui-error>
+    <nikevco-ui-hint>Hint</nikevco-ui-hint>
+
+    <nikevco-ui-error>Error</nikevco-ui-error>
+  </nikevco-ui-form-field>
+
+  <nikevco-ui-form-field>
+    <nikevco-ui-label>Superhero</nikevco-ui-label>
+    <nikevco-ui-select [(ngModel)]="superheroModel">
+      <nikevco-ui-option value="Superman">Superman</nikevco-ui-option>
+      <nikevco-ui-option value="Batman">Batman</nikevco-ui-option>
+      <nikevco-ui-option value="Iron Man">Iron Man</nikevco-ui-option>
+    </nikevco-ui-select>
+  </nikevco-ui-form-field>
+
+  <nikevco-ui-form-field>
+    <nikevco-ui-label>Name</nikevco-ui-label>
+    <nikevco-ui-select [formControl]="name">
+      <nikevco-ui-option value="Tyron">Tyron</nikevco-ui-option>
+      <nikevco-ui-option value="Mike">Mike</nikevco-ui-option>
+      <nikevco-ui-option value="John">John</nikevco-ui-option>
+    </nikevco-ui-select>
+  </nikevco-ui-form-field>
+</div>

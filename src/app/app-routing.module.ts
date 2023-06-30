@@ -8,6 +8,7 @@ import { DropdownPageComponent } from './pages/dropdown-page/dropdown-page.compo
 import { SliderPageComponent } from './pages/slider-page/slider-page.component';
 import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-buttons-page.component';
+import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-page.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'toggle-buttons',
     component: ToggleButtonsPageComponent,
+  },
+  {
+    path: 'form-fields',
+    component: FormFieldsPageComponent,
   },
 ];
 

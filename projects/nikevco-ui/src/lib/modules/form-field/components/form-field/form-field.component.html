@@ -1,0 +1,8 @@
+<ng-content select="nikevco-ui-label"></ng-content>
+<div (click)="triggerInput($event)" class="nikevco-ui-form-field-content">
+  <ng-content select="[nikevcoUiInput], nikevco-ui-select"></ng-content>
+</div>
+
+<ng-content select="nikevco-ui-hint"></ng-content>
+
+<ng-content #error select="nikevco-ui-error"></ng-content>
