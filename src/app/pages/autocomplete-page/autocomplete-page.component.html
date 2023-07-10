@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="example">
+    <nikevco-ui-form-field>
+      <nikevco-ui-label>Name</nikevco-ui-label>
+      <input
+        [ngModel]="model"
+        (ngModelChange)="modelChange($event)"
+        type="text"
+        [nikevcoUiAutocomplete]="autocomplete"
+        nikevcoUiInput
+        [autoSelectFirstOption]="true"
+      />
+      <nikevco-ui-autocomplete #autocomplete>
+        <nikevco-ui-option value="Tyron">Tyron</nikevco-ui-option>
+        <nikevco-ui-option value="John">John</nikevco-ui-option>
+      </nikevco-ui-autocomplete>
+    </nikevco-ui-form-field>
+  </div>
+
+  <div class="example">
+    <nikevco-ui-form-field>
+      <nikevco-ui-label>Brand</nikevco-ui-label>
+      <input
+        [ngModel]="model"
+        (ngModelChange)="modelChange($event)"
+        type="text"
+        [nikevcoUiAutocomplete]="autocompleteBrand"
+        nikevcoUiInput
+      />
+      <nikevco-ui-autocomplete #autocompleteBrand>
+        <nikevco-ui-option-group *ngFor="let option of optionGroups" [label]="option.label">
+          <nikevco-ui-option *ngFor="let value of option.values" [value]="value">{{
+            value
+          }}</nikevco-ui-option>
+        </nikevco-ui-option-group>
+      </nikevco-ui-autocomplete>
+    </nikevco-ui-form-field>
+  </div>
+</div>

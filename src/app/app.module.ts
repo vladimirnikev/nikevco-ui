@@ -15,6 +15,7 @@ import {
   NikevCoFormFieldModule,
   NikevCoSelectModule,
   NikevCoInputModule,
+  NikevCoAutocompleteModule,
 } from 'nikevco-ui';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,6 +29,7 @@ import { SliderPageComponent } from './pages/slider-page/slider-page.component';
 import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-buttons-page.component';
 import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-page.component';
+import { AutocompletePageComponent } from './pages/autocomplete-page/autocomplete-page.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-pa
     BadgePageComponent,
     ToggleButtonsPageComponent,
     FormFieldsPageComponent,
+    AutocompletePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,7 @@ import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-pa
     NikevCoFormFieldModule,
     NikevCoSelectModule,
     NikevCoInputModule,
+    NikevCoAutocompleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

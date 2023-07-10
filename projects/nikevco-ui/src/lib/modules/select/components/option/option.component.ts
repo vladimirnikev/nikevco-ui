@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'nikevco-ui-option',
@@ -8,7 +8,11 @@ import { Component, EventEmitter, HostListener, Input, Output } from '@angular/c
 export class OptionComponent {
   @Output() selected = new EventEmitter();
 
-  @Input() value: any;
+  @Input() value!: any;
+
+  public DOMElement = this.el.nativeElement;
+
+  constructor(private el: ElementRef) {}
 
   @HostListener('click')
   onClick() {
