@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="example">
+        <nikevco-ui-chip-list>
+            <nikevco-ui-chip>First Chip</nikevco-ui-chip>
+            <nikevco-ui-chip>Second Chip</nikevco-ui-chip>
+        </nikevco-ui-chip-list>
+    </div>
+
+    <div class="example">
+        Common chip-option list
+        <nikevco-ui-chip-list>
+            <nikevco-ui-chip-option>First Chip Option</nikevco-ui-chip-option>
+            <nikevco-ui-chip-option>Second Chip Option</nikevco-ui-chip-option>
+        </nikevco-ui-chip-list>
+    </div>
+
+    <div class="example">
+        Common chip-option list #2
+        <nikevco-ui-chip-list value="second" (valueChange)="onValueChange($event)">
+            <nikevco-ui-chip-option value="first">First Chip Option</nikevco-ui-chip-option>
+            <nikevco-ui-chip-option value="second">Second Chip Option</nikevco-ui-chip-option>
+        </nikevco-ui-chip-list>
+    </div>
+
+    <div class="example">
+        Chip-option list with ngModel
+        <nikevco-ui-chip-list [(ngModel)]="commonChipValue" (ngModelChange)="onModelChange($event)">
+            <nikevco-ui-chip-option value="first">First Chip Option</nikevco-ui-chip-option>
+            <nikevco-ui-chip-option value="second">Second Chip Option</nikevco-ui-chip-option>
+        </nikevco-ui-chip-list>
+    </div>
+
+    <div class="example">
+        Chip-option list with FormBuilder
+        <nikevco-ui-chip-list [formControl]="formControl">
+            <nikevco-ui-chip-option color="secondary" value="first_chip">First Chip Option</nikevco-ui-chip-option>
+            <nikevco-ui-chip-option color="primary" value="second_chip">Second Chip Option</nikevco-ui-chip-option>
+        </nikevco-ui-chip-list>
+    </div>
+</div>

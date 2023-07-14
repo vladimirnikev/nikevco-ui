@@ -52,3 +52,7 @@ export * from './lib/modules/input/directives/input.directive';
 export * from './lib/modules/autocomplete/autocomplete.module';
 export * from './lib/modules/autocomplete/components/autocomplete/autocomplete.component';
 export * from './lib/modules/autocomplete/directives/autocomplete.directive';
+export * from './lib/modules/chips/chips.module';
+export * from './lib/modules/chips/components/chip/chip.component';
+export * from './lib/modules/chips/components/chip-list/chip-list.component';
+export * from './lib/modules/chips/components/chip-option/chip-option.component';

@@ -11,7 +11,7 @@
   --nkui-color-grey: #a1a0a0;
   --nkui-color-dark-grey: #545454;
   --nkui-color-light-grey: #cccccc;
-  --nkui-color-primary: blue;
+  --nkui-color-primary: #3333d8;
   --nkui-color-secondary: violet;
   --nkui-color-warn: rgb(214, 214, 34);
   --nkui-color-success: green;
@@ -467,4 +467,45 @@ nikevco-ui-radio-group.nikevco-success input:checked + .nikevco-ui-custom-radio 
 // Select
 .nikevco-ui-select-menu nikevco-ui-option {
   padding: 4px 8px;
+}
+
+// Chips
+.nikevco-ui-chip {
+  background-color: var(--nkui-color-light-grey);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.nikevco-ui-chip:hover {
+  background-color: var(--nkui-color-grey);
+}
+
+.nikevco-ui-chip-option.active {
+  background-color: var(--nkui-color-primary);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-chip-option.active.nikevco-primary {
+  background: var(--nkui-color-primary);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-chip-option.active.nikevco-secondary {
+  background: var(--nkui-color-secondary);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-chip-option.active.nikevco-success {
+  background: var(--nkui-color-success);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-chip-option.active.nikevco-warn {
+  background: var(--nkui-color-warn);
+  color: var(--nkui-color-white);
+}
+
+.nikevco-ui-chip-option.active.nikevco-danger {
+  background: var(--nkui-color-danger);
+  color: var(--nkui-color-white);
 }

@@ -10,6 +10,7 @@ import { BadgePageComponent } from './pages/badge-page/badge-page.component';
 import { ToggleButtonsPageComponent } from './pages/toggle-buttons-page/toggle-buttons-page.component';
 import { FormFieldsPageComponent } from './pages/form-fields-page/form-fields-page.component';
 import { AutocompletePageComponent } from './pages/autocomplete-page/autocomplete-page.component';
+import { ChipsPageComponent } from './pages/chips-page/chips-page.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'autocompletes',
     component: AutocompletePageComponent,
+  },
+  {
+    path: 'chips',
+    component: ChipsPageComponent,
   },
 ];
 

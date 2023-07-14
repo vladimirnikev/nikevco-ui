@@ -1,0 +1,14 @@
+:host {
+    margin: 4px 0 4px 8px;
+    cursor: pointer;
+    /* transition: 300ms; */
+}
+
+:host.active {
+    /* transition: 300ms; */
+}
+
+.chip-icon {
+    padding: 0 4px 0 0;
+    line-height: 0;
+}
